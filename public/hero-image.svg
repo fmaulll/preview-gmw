@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gold Bar -->
+  <g filter="url(#glow)">
+    <rect x="150" y="100" width="200" height="80" rx="10" fill="#FFD700" />
+    <rect x="160" y="110" width="180" height="60" rx="5" fill="#FFA500" />
+  </g>
+
+  <!-- Mining Pick -->
+  <g filter="url(#glow)" transform="translate(50, 150) rotate(-45)">
+    <rect x="150" y="100" width="200" height="20" rx="5" fill="#C0C0C0" />
+    <path d="M350 90 L380 110 L350 130 Z" fill="#A0A0A0" />
+  </g>
+
+  <!-- Crystal Cluster -->
+  <g filter="url(#glow)" transform="translate(-20, 50)">
+    <path d="M350 200 L400 300 L300 300 Z" fill="#4169E1" fillOpacity="0.8" />
+    <path d="M320 220 L370 280 L270 280 Z" fill="#1E90FF" fillOpacity="0.8" />
+    <path d="M380 220 L430 280 L330 280 Z" fill="#87CEEB" fillOpacity="0.8" />
+  </g>
+
+  <!-- Oil Drop -->
+  <g filter="url(#glow)" transform="translate(0, 100)">
+    <path d="M200 250 Q250 200 300 250 Q320 300 250 320 Q180 300 200 250 Z" fill="#000000" fillOpacity="0.8" />
+    <path d="M220 260 Q250 220 280 260 Q290 290 250 300 Q210 290 220 260 Z" fill="#1a1a1a" fillOpacity="0.8" />
+  </g>
+
+  <!-- Glow Filter -->
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+</svg> 
